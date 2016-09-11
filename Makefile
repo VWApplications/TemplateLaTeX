@@ -14,7 +14,7 @@ FIXOS_SOURCES = informacoes.tex novosComandos.tex \
 FIXOS_FILES = $(addprefix $(FIXOS_DIR)/, $(FIXOS_SOURCES))
 
 EDITAVEIS_DIR = editaveis
-EDITAVEIS_SOURCES = informacoes.tex introducao.tex \
+EDITAVEIS_SOURCES = informacoes.tex introducao.tex commit_log.tex \
 
 EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))
 
@@ -28,7 +28,7 @@ SOURCES = $(FIXOS_FILES) $(EDITAVEIS_FILES)
 
 .PHONY: all clean dist-clean
 
-all:
+all: git
 	@make $(TARGET)
 
 $(TARGET): $(MAIN_FILE) $(SOURCES) bibliografia.bib
@@ -50,3 +50,8 @@ dist: clean
 
 dist-clean: clean
 	rm -f $(PDF_FILE) $(TARGET)
+
+# Para inserir os commits dentro do pdf - make git
+git:
+	./latex-git-log --author --width=5 > ./editaveis/commit_log.tex
+
