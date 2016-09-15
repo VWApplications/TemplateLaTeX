@@ -26,9 +26,14 @@ Para compilar o texto através do Makefile digite:
 * **Arquivo main.tex**: Onde será organizado o corpo do documento, cada arquivo.tex criado na pasta editaveis deve ser
 inserido na ordem que irá aparecer no documento através do comando ```\input{editaveis/NomeDoArquivo.tex}```
 
+* **Historio de commits**: Para inserir os commits do git log no documentos, no terminal insira: ```make git``` e logo depois insira ```make```
+o histórico estará presente no apendice do documento
+
 ## Outras informações
 
 Licenciado em Creative Commons Atribuição 3.0: http://creativecommons.org/licenses/by/3.0/
 
 Desenvolvido e adaptado pelo professor Edson Alves edsomjr@gmail.com.
+
+Contribuição pelo aluno Victor Arnaud
 

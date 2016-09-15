@@ -19,3 +19,25 @@
 *.brf
 *.toc
 *.idx
+*.fls
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## File PATH Mac
+*.DS_Store
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+## Latex git
+./editaveis/commit_log.tex
+editaveis/commit_log.tex
