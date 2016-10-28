@@ -1,4 +1,7 @@
 \definecolor{blue}{RGB}{41,5,195}
+\definecolor{string}{rgb}{0,0.5,0}
+\definecolor{comentary}{RGB}{200,190,190}
+\definecolor{purple}{rgb}{0.5,0,0.35}
 \makeatletter
 \hypersetup{
     %pagebackref=true,
@@ -18,3 +21,128 @@
 \setlength{\parindent}{1.3cm}
 \setlength{\parskip}{0.2cm}
 \makeindex
+
+%% para usar varias linguagens use \lstdefinestyle{}
+\lstdefinestyle{LaTeX} {
+  language={[LaTeX]TeX},
+  basicstyle=\ttfamily\small,
+  identifierstyle=\color{black},
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  numbers=none,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  tabsize=4,
+  frame=lines,
+}
+
+\lstdefinestyle{CPP} {
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  frame=lines,
+  emph={},
+  emphstyle={\color{blue}\bfseries},
+  tabsize=4,
+  morekeywords={include},
+}
+
+\lstdefinestyle{Java} {
+  language=Java,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  morecomment=[s][\color{blue}]{/**}{*/},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  tabsize=4,
+  frame=lines,
+}
+
+\lstdefinestyle{Python} {
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  tabsize=4,
+  frame=lines,
+}
+
+\lstdefinestyle{Ruby} {
+  language=Ruby,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  tabsize=4,
+  frame=lines,
+}
+
+\lstdefinestyle{SQL} {
+  language=SQL,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  tabsize=4,
+  frame=lines,
+}
+
+\lstdefinestyle{HTML} {
+  language=HTML,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{red}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  tabsize=4,
+  frame=lines,
+}
+
+\lstdefinestyle{XML} {
+  language=XML,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{purple}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{white},
+  tabsize=4,
+  frame=lines,
+}
+
