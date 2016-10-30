@@ -2,6 +2,7 @@
 \definecolor{string}{rgb}{0,0.5,0}
 \definecolor{comentary}{RGB}{200,190,190}
 \definecolor{purple}{rgb}{0.5,0,0.35}
+\definecolor{prompt}{RGB}{237,237,237}
 \makeatletter
 \hypersetup{
     %pagebackref=true,
@@ -35,6 +36,7 @@
   backgroundcolor=\color{white},
   tabsize=4,
   frame=lines,
+  morekeywords={part, chapter, subsection, subsubsection, appendix, bottomrule, toprule, midrule, includegraphics},
 }
 
 \lstdefinestyle{CPP} {
@@ -144,5 +146,19 @@
   backgroundcolor=\color{white},
   tabsize=4,
   frame=lines,
+  morekeywords={},
+}
+
+\lstdefinestyle{SHELL} {
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{purple}\bfseries,
+  stringstyle=\color{string},
+  commentstyle=\color{comentary},
+  showstringspaces=false,
+  breaklines=true,
+  backgroundcolor=\color{prompt},
+  tabsize=4,
+  frame=L,
+  morekeywords={sudo, rvm, npm},
 }
 
