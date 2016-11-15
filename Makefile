@@ -4,7 +4,6 @@ BIBTEX = bibtex
 LATEX = latex
 DVIPS = dvips
 PS2PDF = ps2pdf
-PDFLATEX = pdflatex
 
 VERSION = 0.1.0
 

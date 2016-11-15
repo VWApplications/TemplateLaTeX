@@ -17,7 +17,14 @@ Para compilar o texto através do Makefile digite:
 
 * **Pasta fixos**: Arquivos de configuração, não necessário e nem aconselhável mexer caso não tenha conhecimento.
 
-* **Pasta Figuras**: Onde será inserido as figuras do tipo **.eps**
+* **Pasta Figuras**: Onde será inserido as figuras do tipo **.eps**, para converter é só baixar o ImageMagick e no terminal digitar:
+
+```sh
+  convert figura.png figura.eps
+  convert figura.png figura.pdf
+  convert figura.jpg figura.eps
+  convert figura.jpg figura.pdf
+```
 
 * **Pasta Editaveis**: Onde será inserido todo o conteúdo do documento.
 
