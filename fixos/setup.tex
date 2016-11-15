@@ -31,7 +31,8 @@
   keywordstyle=\color{blue}\bfseries,
   commentstyle=\color{comentary},
   showstringspaces=false,
-  numbers=none,
+  numbers=left,
+  numberstyle=\tiny,
   breaklines=true,
   backgroundcolor=\color{white},
   tabsize=4,
@@ -110,12 +111,10 @@
   stringstyle=\color{string},
   commentstyle=\color{comentary},
   showstringspaces=false,
-  numbers=left,
-  numberstyle=\tiny,
   breaklines=true,
-  backgroundcolor=\color{white},
+  backgroundcolor=\color{prompt},
   tabsize=4,
-  frame=lines,
+  frame=L,
 }
 
 \lstdefinestyle{HTML} {
@@ -150,8 +149,9 @@
 }
 
 \lstdefinestyle{SHELL} {
+  language=bash,
   basicstyle=\ttfamily\small,
-  keywordstyle=\color{purple}\bfseries,
+  keywordstyle=\color{blue}\bfseries,
   stringstyle=\color{string},
   commentstyle=\color{comentary},
   showstringspaces=false,
@@ -159,6 +159,7 @@
   backgroundcolor=\color{prompt},
   tabsize=4,
   frame=L,
-  morekeywords={sudo, rvm, npm},
+  morekeywords={sudo, apt, get, install},
+  emph={PATH, $PATH, PS1},
+  emphstyle={\color{purple}\bfseries},
 }
-

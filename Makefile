@@ -1,9 +1,10 @@
-TARGET = book.pdf
+TARGET = Book.pdf
 
 BIBTEX = bibtex
 LATEX = latex
 DVIPS = dvips
 PS2PDF = ps2pdf
+PDFLATEX = pdflatex
 
 VERSION = 0.1.0
 
@@ -50,8 +51,4 @@ dist: clean
 
 dist-clean: clean
 	rm -f $(PDF_FILE) $(TARGET)
-
-# Para inserir os commits dentro do pdf - make git
-git:
-	./latex-git-log --author --width=5 > ./editaveis/commit_log.tex
 

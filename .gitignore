@@ -38,6 +38,3 @@
 *.ind
 *.ist
 
-## Latex git
-./editaveis/commit_log.tex
-editaveis/commit_log.tex
